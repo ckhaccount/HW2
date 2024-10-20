@@ -142,7 +142,7 @@ void RC::Transmit_Data()
     HAL_UART_Transmit_DMA(&huart1, reinterpret_cast<uint8_t*>(buffer), strlen(buffer));
     snprintf(buffer, sizeof(buffer), "The CH3_Position is: %.4f\r\n", Get_CH3_l_col());
     HAL_UART_Transmit_DMA(&huart1, reinterpret_cast<uint8_t*>(buffer), strlen(buffer));
-    snprintf(buffer, sizeof(buffer), "The left swtich is: %s\r\n", get_switch_state_string(Get_RCSwitch_l()));
+    snprintf(buffer, sizeof(buffer), "The left switch is: %s\r\n", get_switch_state_string(Get_RCSwitch_l()));
     HAL_UART_Transmit_DMA(&huart1, reinterpret_cast<uint8_t*>(buffer), strlen(buffer));
     snprintf(buffer, sizeof(buffer), "The right switch is: %s\r\n", get_switch_state_string(Get_RCSwitch_r()));
     HAL_UART_Transmit_DMA(&huart1, reinterpret_cast<uint8_t*>(buffer), strlen(buffer));

@@ -1,7 +1,7 @@
 #include "main.h"
 #include "RC.h"
 #include "usart.h"
-
+//this function returns the state of switch and mouse with string instead of enum
 const char* get_switch_state_string(RC::RCSwitchState_e state)
 {
     switch (state)

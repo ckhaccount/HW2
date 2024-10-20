@@ -5,7 +5,7 @@ extern RC rc;
 extern uint16_t data_index;
 void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
 {
-    if(huart->Instance == USART1)
+    if(huart->Instance == USART3)
     {
         HAL_DMA_Abort(huart->hdmarx);
         for(uint16_t i = 0; i < Size; i++)
@@ -20,6 +20,6 @@ void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
                 rc.Get_data()[data_index++]=rc.Get_buffer()[i];
             }
         }
-        HAL_UARTEx_ReceiveToIdle_DMA(&huart1,rc.Get_buffer(), sizeof(rc.Get_buffer()));
+        HAL_UARTEx_ReceiveToIdle_DMA(&huart3,rc.Get_buffer(), sizeof(rc.Get_buffer()));
     }
 }

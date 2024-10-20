@@ -17,16 +17,14 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
-
 #include "main.h"
 #include "dma.h"
 #include "usart.h"
 #include "gpio.h"
 #include "RC.h"
-extern DMA_HandleTypeDef hdma_usart1_rx;
-uint16_t data_index;
+extern DMA_HandleTypeDef hdma_usart3_rx;
+uint16_t data_index=0;
 RC rc;
-
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -95,9 +93,10 @@ int main(void)
   MX_GPIO_Init();
   MX_DMA_Init();
   MX_USART1_UART_Init();
+  MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
-  HAL_UARTEx_ReceiveToIdle_DMA(&huart1,rc.Get_buffer(), sizeof(rc.Get_buffer()));
-  __HAL_DMA_DISABLE_IT(&hdma_usart1_rx,DMA_IT_HT);
+  HAL_UARTEx_ReceiveToIdle_DMA(&huart3,rc.Get_buffer(), sizeof(rc.Get_buffer()));
+  __HAL_DMA_DISABLE_IT(&hdma_usart3_rx,DMA_IT_HT);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -108,16 +107,12 @@ int main(void)
     {
       HAL_DMA_Abort(huart1.hdmarx);
       rc.Transmit_Data();
-      HAL_UARTEx_ReceiveToIdle_DMA(&huart1,rc.Get_buffer(), sizeof(rc.Get_buffer()));
-      __HAL_DMA_DISABLE_IT(&hdma_usart1_rx,DMA_IT_HT);
+      HAL_UARTEx_ReceiveToIdle_DMA(&huart3,rc.Get_buffer(), sizeof(rc.Get_buffer()));
+      __HAL_DMA_DISABLE_IT(&hdma_usart3_rx,DMA_IT_HT);
     }
-    /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
-  }
   /* USER CODE END 3 */
+	}
 }
-
 /**
   * @brief System Clock Configuration
   * @retval None

@@ -395,6 +395,31 @@
           <GroupName>Application/User/Core</GroupName>
           <Files>
             <File>
+              <FileName>get_enum_string.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\Core\Src\get_enum_string.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>linearmap.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\Core\Src\linearmap.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>RC.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\Core\Src\RC.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>RXeventCallback.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\Core\Src\RXeventCallback.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>main.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\Core\Src\main.cpp</FilePath>
+            </File>
+            <File>
               <FileName>gpio.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/gpio.c</FilePath>
@@ -469,31 +494,6 @@
               <FileName>stm32f4xx_hal_msp.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/stm32f4xx_hal_msp.c</FilePath>
-            </File>
-            <File>
-              <FileName>get_enum_string.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\Core\Src\get_enum_string.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>linearmap.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\Core\Src\linearmap.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>RC.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\Core\Src\RC.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>RXeventCallback.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\Core\Src\RXeventCallback.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>main.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\Core\Src\main.cpp</FilePath>
             </File>
           </Files>
         </Group>
