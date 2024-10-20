@@ -2078,7 +2078,7 @@ Image Symbol Table
     HardFault_Handler                        0x080025cd   Thumb Code     2  stm32f4xx_it.o(.text.HardFault_Handler)
     MX_DMA_Init                              0x080025d1   Thumb Code    92  dma.o(.text.MX_DMA_Init)
     MX_GPIO_Init                             0x0800262d   Thumb Code    56  gpio.o(.text.MX_GPIO_Init)
-    MX_USART1_UART_Init                      0x08002665   Thumb Code    66  usart.o(.text.MX_USART1_UART_Init)
+    MX_USART1_UART_Init                      0x08002665   Thumb Code    68  usart.o(.text.MX_USART1_UART_Init)
     MX_USART3_UART_Init                      0x080026a9   Thumb Code    64  usart.o(.text.MX_USART3_UART_Init)
     MemManage_Handler                        0x080026e9   Thumb Code     2  stm32f4xx_it.o(.text.MemManage_Handler)
     NMI_Handler                              0x080026ed   Thumb Code     2  stm32f4xx_it.o(.text.NMI_Handler)
@@ -2298,8 +2298,7 @@ Memory Map of the image
     0x080025ce   0x080025ce   0x00000002   PAD
     0x080025d0   0x080025d0   0x0000005c   Code   RO          126    .text.MX_DMA_Init   dma.o
     0x0800262c   0x0800262c   0x00000038   Code   RO          118    .text.MX_GPIO_Init  gpio.o
-    0x08002664   0x08002664   0x00000042   Code   RO          135    .text.MX_USART1_UART_Init  usart.o
-    0x080026a6   0x080026a6   0x00000002   PAD
+    0x08002664   0x08002664   0x00000044   Code   RO          135    .text.MX_USART1_UART_Init  usart.o
     0x080026a8   0x080026a8   0x00000040   Code   RO          137    .text.MX_USART3_UART_Init  usart.o
     0x080026e8   0x080026e8   0x00000002   Code   RO          159    .text.MemManage_Handler  stm32f4xx_it.o
     0x080026ea   0x080026ea   0x00000002   PAD
@@ -2415,12 +2414,12 @@ Image component sizes
       3602          0          0          0          0      32111   stm32f4xx_hal_uart.o
         68          0          0          0          0       4315   stm32f4xx_it.o
         18          0         24          4          0       2661   system_stm32f4xx.o
-       504          0          0          0        336       7498   usart.o
+       506          0          0          0        336       7502   usart.o
 
     ----------------------------------------------------------------------
-      9766        208        840         12       1948     125524   Object Totals
+      9766        208        840         12       1948     125528   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-        72          0          0          0          8          0   (incl. Padding)
+        70          0          0          0          8          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -2498,8 +2497,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     15072        414       1016         12       2044     126920   Grand Totals
-     15072        414       1016         12       2044     126920   ELF Image Totals
+     15072        414       1016         12       2044     126924   Grand Totals
+     15072        414       1016         12       2044     126924   ELF Image Totals
      15072        414       1016         12          0          0   ROM Totals
 
 ==============================================================================
