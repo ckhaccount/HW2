@@ -28,25 +28,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 65,
+				"line" : 70,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 61,
+				"line" : 66,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 62,
+				"line" : 67,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 63,
+				"line" : 68,
 				"parent" : 0
 			},
 			{
@@ -181,10 +181,10 @@
 			},
 			"sourceIndexes" : 
 			[
-				13,
 				14,
-				16,
-				18,
+				15,
+				17,
+				19,
 				20
 			]
 		},
@@ -280,9 +280,8 @@
 			},
 			"sourceIndexes" : 
 			[
-				15,
-				17,
-				19,
+				16,
+				18,
 				21,
 				22,
 				23,
@@ -448,7 +447,7 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "Core/Src/main_1.cpp",
+				"fragment" : "Core/Src/main.cpp",
 				"role" : "flags"
 			}
 		],
@@ -548,6 +547,7 @@
 				10,
 				11,
 				12,
+				13,
 				27,
 				31,
 				62,
@@ -559,7 +559,6 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				13,
 				14,
 				15,
 				16,
@@ -656,6 +655,11 @@
 		},
 		{
 			"backtrace" : 1,
+			"path" : "Core/Src/.idea/vcs.xml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
 			"path" : "Core/Src/.idea/workspace.xml",
 			"sourceGroupIndex" : 1
 		},
@@ -697,14 +701,8 @@
 		},
 		{
 			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/main.c",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Core/Src/main_1.cpp",
+			"path" : "Core/Src/main.cpp",
 			"sourceGroupIndex" : 2
 		},
 		{

@@ -32,7 +32,6 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/STM32Project/HW2/Core/Src/dma.c" "CMakeFiles/HW2.elf.dir/Core/Src/dma.c.obj" "gcc" "CMakeFiles/HW2.elf.dir/Core/Src/dma.c.obj.d"
   "D:/STM32Project/HW2/Core/Src/gpio.c" "CMakeFiles/HW2.elf.dir/Core/Src/gpio.c.obj" "gcc" "CMakeFiles/HW2.elf.dir/Core/Src/gpio.c.obj.d"
-  "D:/STM32Project/HW2/Core/Src/main.c" "CMakeFiles/HW2.elf.dir/Core/Src/main.c.obj" "gcc" "CMakeFiles/HW2.elf.dir/Core/Src/main.c.obj.d"
   "D:/STM32Project/HW2/Core/Src/stm32f4xx_hal_msp.c" "CMakeFiles/HW2.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj" "gcc" "CMakeFiles/HW2.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj.d"
   "D:/STM32Project/HW2/Core/Src/stm32f4xx_it.c" "CMakeFiles/HW2.elf.dir/Core/Src/stm32f4xx_it.c.obj" "gcc" "CMakeFiles/HW2.elf.dir/Core/Src/stm32f4xx_it.c.obj.d"
   "D:/STM32Project/HW2/Core/Src/syscalls.c" "CMakeFiles/HW2.elf.dir/Core/Src/syscalls.c.obj" "gcc" "CMakeFiles/HW2.elf.dir/Core/Src/syscalls.c.obj.d"
@@ -59,7 +58,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/STM32Project/HW2/Core/Src/RXeventCallback.cpp" "CMakeFiles/HW2.elf.dir/Core/Src/RXeventCallback.cpp.obj" "gcc" "CMakeFiles/HW2.elf.dir/Core/Src/RXeventCallback.cpp.obj.d"
   "D:/STM32Project/HW2/Core/Src/get_enum_string.cpp" "CMakeFiles/HW2.elf.dir/Core/Src/get_enum_string.cpp.obj" "gcc" "CMakeFiles/HW2.elf.dir/Core/Src/get_enum_string.cpp.obj.d"
   "D:/STM32Project/HW2/Core/Src/linearmap.cpp" "CMakeFiles/HW2.elf.dir/Core/Src/linearmap.cpp.obj" "gcc" "CMakeFiles/HW2.elf.dir/Core/Src/linearmap.cpp.obj.d"
-  "D:/STM32Project/HW2/Core/Src/main_1.cpp" "CMakeFiles/HW2.elf.dir/Core/Src/main_1.cpp.obj" "gcc" "CMakeFiles/HW2.elf.dir/Core/Src/main_1.cpp.obj.d"
+  "D:/STM32Project/HW2/Core/Src/main.cpp" "CMakeFiles/HW2.elf.dir/Core/Src/main.cpp.obj" "gcc" "CMakeFiles/HW2.elf.dir/Core/Src/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

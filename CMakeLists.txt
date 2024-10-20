@@ -56,7 +56,9 @@ add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32F427xx)
 file(GLOB_RECURSE SOURCES "Core/*.*" "Drivers/*.*")
 
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F427IIHX_FLASH.ld
-        Core/Src/main_1.cpp
+        Core/Src/main.cpp
+        Core/Src/main.cpp
+        Core/Src/main.cpp
         Core/Src/main.cpp
         Core/Src/main.cpp
         Core/Src/main.cpp)
