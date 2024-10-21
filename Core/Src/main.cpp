@@ -103,9 +103,9 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    if(data_index==17)
+    if(data_index==RC_RX_DATA_SIZE)
     {
-      HAL_DMA_Abort(huart1.hdmarx);
+      HAL_DMA_Abort(huart3.hdmarx);
       rc.Transmit_Data();
       HAL_UARTEx_ReceiveToIdle_DMA(&huart3,rc.Get_buffer(), sizeof(rc.Get_buffer()));
       __HAL_DMA_DISABLE_IT(&hdma_usart3_rx,DMA_IT_HT);

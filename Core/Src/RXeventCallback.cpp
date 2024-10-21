@@ -16,7 +16,7 @@ void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
             }
             else
             {
-                data_index-=18;
+                data_index-=RC_RX_DATA_SIZE;
                 rc.Get_data()[data_index++]=rc.Get_buffer()[i];
             }
         }
